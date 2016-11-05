@@ -25,21 +25,22 @@ The results from each clasifier formed the final prediction via weighted voting.
 Module Description:
 -------------------------------
 
-(1) feature_extraction_sessions.py:
-    This will extract frequency counts from the “sessions.csv” data (which encodes the 
-    web sessions log for users).
-    The extracted features will be saved in the code directory. 
+> feature_extraction_sessions.py:
 
-(2) data_preparation.py:
-    This will make the data ready for the classifiers.
-    The data processing includes:
-        — Dealing with missing data.
-        - Applying one-hot-encoding to categorical features.
-        - Parsing dates (and extraction of simple numerical features).
-        - Adding to the training and testing data the features that
-          were extracted from sessions.csv file in the previous step.
+This will extract frequency counts from the “sessions.csv” data (which encodes the web sessions log for users). The extracted features will be saved in the code directory. <br />
+<br />
 
-(3) prediction.py:
-    This will use the output of the previous step, to do the predictions.
-    The final predictions will be saved in a file called 
-    'final_prediction.csv' 
+> data_preparation.py:
+
+This will make the data ready for the classifiers.
+The data processing includes:
+- Dealing with missing data.
+- Applying one-hot-encoding to categorical features.
+- Parsing dates (and extraction of simple numerical features).
+- Adding to the training and testing data the features that
+  were extracted from sessions.csv file in the previous step. <br />
+<br />
+
+> prediction.py:
+
+This will use the output of the previous step, to do the predictions. The final predictions will be saved in a file called 'final_prediction.csv' 
